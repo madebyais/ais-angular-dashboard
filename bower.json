@@ -1,0 +1,14 @@
+{
+  "name": "ais-angular-dashboard",
+  "authors": [
+    "Ais <madebyais@gmail.com>"
+  ],
+  "description": "A boilter for creating a single page web application",
+  "main": "",
+  "license": "MIT",
+  "homepage": "madebyais.com",
+  "dependencies": {
+    "angular": "angularjs#^1.5.9",
+    "angular-route": "^1.5.9"
+  }
+}

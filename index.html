@@ -1,0 +1,72 @@
+<!--
+
+    AIS AngularJS Dashboard
+
+    A boilerplate for creating a single page application using AngularJS.
+
+    Credits to CREATIVE TIM
+      for making such a great dashboard theme!
+      You can visit them to http://www.creative-tim.com/
+
+-->
+<!doctype html>
+<html ng-app="ais-angular">
+
+  <head>
+    <title>AIS AngularJS Dashboard</title>
+
+    <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
+
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.min.css" rel="stylesheet" />
+    <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
+    <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+    <script src="assets/js/light-bootstrap-dashboard.js"></script>
+
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <script src="application/config.js"></script>
+    <script src="application/routes.js"></script>
+    <script src="application/app.js"></script>
+    <script src="application/services/ajax.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <!--
+        You can change the color of the sidebar using:
+          data-color="blue | azure | green | orange | red | purple"
+      -->
+      <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
+        <div class="sidebar-wrapper">
+          <div class="logo">
+            <a href="/ais-angular-dashboard" class="simple-text">A I S</a>
+          </div>
+
+          <ng-include src="'menu.html'"></ng-include>
+        </div>
+      </div>
+
+      <div class="main-panel">
+        <div ng-view></div>
+      </div>
+    </div>
+
+
+    <!--
+      INIT MODULES
+      Include all of your controller's module below.
+    -->
+    <script src="application/modules/dashboard/controller.js"></script>
+    <script src="application/modules/user/controller.js"></script>
+  </body>
+
+</html>
