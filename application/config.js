@@ -5,4 +5,6 @@
 *
 **/
 
-var config = {}
+var config = {
+	apiBaseUrl: 'http://localhost:9000'
+};

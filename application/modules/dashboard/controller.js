@@ -1,3 +1,3 @@
-app.controller('dashboardCtrl', function ($rootScope, $scope) {
+app.controller('dashboardCtrl', function ($rootScope, $scope, $ajax) {
   $scope.message = 'Page dashboard';
 });

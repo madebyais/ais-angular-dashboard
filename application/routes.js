@@ -13,7 +13,6 @@
 
 var routes = [
 
-  { path: '/', templateUrl: 'application/modules/dashboard/view.html', controller: 'dashboardCtrl' },
-  { path: '/user', templateUrl: 'application/modules/user/view.html', controller: 'userCtrl' },
+  { path: '/', templateUrl: 'application/modules/dashboard/view.html', controller: 'dashboardCtrl' }
 
 ];

@@ -1,14 +1,8 @@
 <ul class="nav">
-  <li ng-class="active">
+  <li>
     <a href="#/">
       <i class="pe-7s-graph"></i>
       <p>Dashboard</p>
-    </a>
-  </li>
-  <li>
-    <a href="#/user">
-      <i class="pe-7s-user"></i>
-      <p>User Profile</p>
     </a>
   </li>
   <li>
@@ -18,3 +12,16 @@
     </a>
   </li>
 </ul>
+
+<script>
+
+// Enable menu activation
+
+$(document).ready(function () {
+  $('ul.nav li a').click(function () {
+    $('ul.nav li').each(function () { $(this).removeClass('active');});
+    $(this).closest('li').addClass('active');
+  });
+});
+
+</script> 

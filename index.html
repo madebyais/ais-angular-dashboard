@@ -21,22 +21,30 @@
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
     <meta name="viewport" content="width=device-width" />
 
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/animate.min.css" rel="stylesheet" />
     <link href="assets/css/light-bootstrap-dashboard.css" rel="stylesheet" />
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href='//fonts.googleapis.com/css?family=Roboto:400,700,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" />
 
+    <script src="assets/js/jquery-1.10.2.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-checkbox-radio-switch.js"></script>
+    <script src="assets/js/bootstrap-notify.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
     <script src="assets/js/light-bootstrap-dashboard.js"></script>
-
-    <script src="bower_components/angular/angular.min.js"></script>
-    <script src="bower_components/angular-route/angular-route.min.js"></script>
-
+    <script src="assets/js/angular/angular.min.js"></script>
+    <script src="assets/js/angular-route/angular-route.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-animate.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-loading-bar/0.9.0/loading-bar.min.js"></script>
+    
     <script src="application/config.js"></script>
     <script src="application/routes.js"></script>
-    <script src="application/app.js"></script>
     <script src="application/services/ajax.js"></script>
+    <script src="application/app.js"></script>
   </head>
 
   <body>
@@ -48,7 +56,7 @@
       <div class="sidebar" data-color="azure" data-image="assets/img/sidebar-5.jpg">
         <div class="sidebar-wrapper">
           <div class="logo">
-            <a href="/ais-angular-dashboard" class="simple-text">A I S</a>
+            <a href="/" class="simple-text">A I S</a>
           </div>
 
           <ng-include src="'menu.html'"></ng-include>
@@ -60,13 +68,11 @@
       </div>
     </div>
 
-
     <!--
       INIT MODULES
       Include all of your controller's module below.
     -->
     <script src="application/modules/dashboard/controller.js"></script>
-    <script src="application/modules/user/controller.js"></script>
   </body>
 
 </html>
